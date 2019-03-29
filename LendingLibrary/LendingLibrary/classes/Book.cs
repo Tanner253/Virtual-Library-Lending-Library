@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LendingLibrary.classes
 {
-    class Book
+    public class Book
     {
         public string Title { get; set; }
         public string Genre { get; set; }
