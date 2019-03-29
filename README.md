@@ -41,4 +41,3 @@ Then select and open ```LendingLibrary.sln```
 
 ## Change Log
 1.0 submits
-
