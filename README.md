@@ -41,9 +41,7 @@ Then select and open ```LendingLibrary.sln```
 ------------------------------
 
 ## Change Log
-***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***
 1.0 submits
 
 
-------------------------------
-For more information on Markdown: https://www.markdownguide.org/cheat-sheet
+
