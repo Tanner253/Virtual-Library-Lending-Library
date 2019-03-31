@@ -4,7 +4,7 @@ using System.Collections;
 using LendingLibrary.classes;
 namespace LendingLibrary
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

@@ -7,7 +7,7 @@ using LendingLibrary.classes;
 
 namespace LendingLibrary.classes
 {
-    class Library<T> : IEnumerable
+    public class Library<T> : IEnumerable
     {
         T[] books = new T[10];
         int count = 0;

@@ -32,11 +32,10 @@ Then select and open ```LendingLibrary.sln```
 ******
 
 ##### Application Start
-![Image 1](https://via.placeholder.com/750x500)
+![Library selection](/assets/capture1.JPG)
 ##### Using the Application
-![Image 1](https://via.placeholder.com/750x500)
-##### Application End
-![Image 1](https://via.placeholder.com/750x500)
+![Save books and know how many are saved](/assets/capture2.JPG)
+
 
 ------------------------------
 
