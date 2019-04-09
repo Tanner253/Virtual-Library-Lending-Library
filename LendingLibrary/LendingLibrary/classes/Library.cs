@@ -22,17 +22,33 @@ namespace LendingLibrary.classes
 
         //public void Remove(T number)
         //see demo for start and finish
-
-        /*public void Remove(string title, Library<Book> library)
+        public void Remove(T book)
         {
-            for (int i = 0; i < library.Count(); i++)
+            int counter = 0;
+           T[] temp = new T[books.Length];
+            for (var i = 0; i < count; i++)
             {
-                if(title == library[i])
-                {
+                
+                
+                    if (!books[i].Equals(book))
+                    {
+                    temp[counter] = books[i];
+                    counter++;
+                    }
 
-                }
+                    
+                
             }
-        }*/
+            books = temp;
+            count--;
+
+            if(counter != count)
+            {
+                Array.Resize(ref books, (books.Length - (count - counter)));
+            }
+        }
+
+
         public int Count()
         {
             return count;

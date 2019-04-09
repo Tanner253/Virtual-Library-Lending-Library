@@ -6,7 +6,8 @@
 ##### *Author: Tanner Percival*
 
 ------------------------------
-
+COLLABERATION : SHANNON TULLY  4/9/2019
+WHITEBOARDED
 ## Description
 this app provides a base library, which is a virtual selection of books and the user can choose to save into their OWN library
 
