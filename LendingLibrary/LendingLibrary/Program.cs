@@ -20,7 +20,7 @@ namespace LendingLibrary
 
         static Library<Book> InitTheLibrary()
         {
-            Library<Book> Library = new Library<Book>
+            Library<Book> library = new Library<Book>
             {
                 new Book {Title = "The Hunger Games", Genre = "Action" },
                 new Book {Title = "50 Shades", Genre = "Romance" },
@@ -29,7 +29,7 @@ namespace LendingLibrary
                 new Book {Title = "Blues Clues", Genre = "Mystery" },
                 new Book {Title = "Click", Genre = "Comedy" }
             };
-            return Library;
+            return library;
            
 
         }
@@ -47,11 +47,32 @@ namespace LendingLibrary
             Console.WriteLine("Choose one of the books to add to your personal Library");
             string bookTitle = Console.ReadLine();
             userLibrary1.Add(bookTitle);
-            Console.WriteLine("Choose Another book to add to your personal Library");
+            Book book = new Book();
+
+            book.Title = bookTitle;
+            Console.WriteLine("enter the genre of that book");
+            string tempGenre = Console.ReadLine();
+            book.Genre = tempGenre;
+            libraryBooks.Remove(book);
+            Console.WriteLine("Choose one of the books to add to your personal Library");
+            string bookTitle2 = Console.ReadLine();
+            userLibrary1.Add(bookTitle);
+            Book book2 = new Book();
+
+            book.Title = bookTitle;
+            Console.WriteLine("enter the genre of that book");
+            string tempGenre2 = Console.ReadLine();
+            book.Genre = tempGenre;
+            libraryBooks.Remove(book);
+            /*Console.WriteLine("Choose Another book to add to your personal Library");
             string bookTitle2 = Console.ReadLine();
             userLibrary1.Add(bookTitle2);
-            Console.WriteLine();
+            libraryBooks.Remove(bookTitle2);
+            Console.WriteLine(); */
             Console.WriteLine($"This is how many books you saved: { userLibrary1.Count()}");
+            Console.WriteLine($"This is how many books are left: { libraryBooks.Count()}");
+            Console.ReadLine();
+
         }
     }
 }
