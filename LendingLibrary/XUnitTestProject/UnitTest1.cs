@@ -48,6 +48,23 @@ namespace XUnitTestProject
             Assert.Equal(8, count);
 
         }
+       // [Fact]
+        public void CanRemoveBook()
+        {
+            Library<Book> Library = new Library<Book> {
+
+                new Book {Title = "The Hunger Games", Genre = "Action" },
+                new Book {Title = "50 Shades", Genre = "Romance" },
+                new Book {Title = "Killers", Genre = "Horror" },
+                new Book {Title = "The Remaining", Genre = "Adventure" },
+                new Book {Title = "The Jungle Book", Genre = "Adventure" },
+                new Book {Title = "The One Eyed", Genre = "Adventure" },
+                new Book {Title = "Blues Clues", Genre = "Mystery" },
+                new Book {Title = "Click", Genre = "Comedy" }
+                };
+            Library.Remove();
+        }
+
     }
 }
 
